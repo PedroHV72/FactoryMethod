@@ -21,6 +21,7 @@ public class IngressoFactoryTest {
     void deveRetornarExcecaoParaIngressoInvalido() {
         try {
             IIngresso ingresso = IngressoFactory.obterIngresso("Futsal");
+            fail();
         } catch (IllegalArgumentException e) {
             assertEquals("Ingresso inválido", e.getMessage());
         }
