@@ -16,14 +16,4 @@ public class IngressoFactoryTest {
             assertEquals("Ingresso inexistente", e.getMessage());
         }
     }
-
-    @Test
-    void deveRetornarExcecaoParaIngressoInvalido() {
-        try {
-            IIngresso ingresso = IngressoFactory.obterIngresso("Futsal");
-            fail();
-        } catch (IllegalArgumentException e) {
-            assertEquals("Ingresso inválido", e.getMessage());
-        }
-    }
 }
